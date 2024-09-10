@@ -1,0 +1,164 @@
+/* footer start */
+footer {
+    background-image: url(../imgs/textured-metal-background.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+.social-media .logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.social-media .logo .logo-iner {
+    display: flex;
+    align-items: center;
+}
+
+.social-media .logo p {
+    font-size: 16px;
+}
+
+.social-media .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-media .logo span {
+    color: red;
+}
+
+.social-media .social-media-links {
+    text-align: center;
+}
+
+.social-media .social-media-links .under-line {
+    padding-bottom: 10px;
+    border-bottom: 2px #ddd6 solid;
+}
+
+.social-media .social-media-links .social-icons {
+    display: flex;
+    justify-content: space-around;
+    padding-block: 20px;
+}
+
+.social-media .subscribe form input {
+    width: 100%;
+    padding: 11px;
+    margin: 8px 0;
+}
+
+.social-media .subscribe form button {
+    width: 100%;
+    padding: 11px;
+    background-color: #E61414;
+    border-color: #e6141400;
+    color: white;
+}
+
+.social-media .subscribe form button i {
+    margin-right: 4px;
+}
+
+.social-media .quick-links .quick-links-item {
+    width: 50%;
+    padding: 7px;
+    /* display: flex; */
+}
+
+.social-media .quick-links {
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.social-media .quick-links .quick-links-item h3 {}
+
+.social-media .quick-links .quick-links-item:hover {
+    background-color: #222222;
+    transform: translateX(10px);
+    transition: transform 0.5s ease-in-out;
+}
+
+.social-media .quick-links .quick-links-item h3 {
+    display: inline;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.social-media .get-in-touch {
+    color: white;
+}
+
+.social-media .get-in-touch h2 {
+    font-size: 19px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.social-media .get-in-touch .get-in-touch-item {
+    padding: 10px;
+}
+
+.social-media .get-in-touch .get-in-touch-item i {
+    color: #CE1212;
+    margin-right: 3px;
+    font-size: 22px;
+}
+
+.social-media .get-in-touch .get-in-touch-item h3 {
+    display: inline;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .social-media .logo {
+        width: 50%;
+    }
+
+    .social-media .social-media-links {
+        width: 50%;
+    }
+
+    .social-media .subscribe {
+        /* display: flex; */
+    }
+
+    .social-media .subscribe form input {
+        width: 75%;
+    }
+
+    .social-media .subscribe form button {
+        width: 20%;
+    }
+
+    .social-media .subscribe form button i {
+        margin-right: 4px;
+    }
+
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .social-media .social-media-links {
+        padding-top: 50px;
+    }
+
+    .p-50 {
+        padding-top: 50px;
+
+    }
+
+    .flex {
+        display: flex;
+    }
+}

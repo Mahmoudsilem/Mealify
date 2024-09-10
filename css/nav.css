@@ -1,0 +1,106 @@
+/* nav start */
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        color: rgb(33, 37, 41);
+        z-index: 5;
+        /* comment to see side nav */
+        display: none;
+    }
+    .nav-cover{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: hsl( 0, 0%, 100%, 0.7 );
+    }
+    nav .container{
+        display: flex;
+        padding: 30px 0;
+    }
+    nav .logo{
+        font-size: 30px;
+        font-weight: 700;
+        z-index: 2;
+    }
+    nav .logo span{
+        color: red;
+    }
+    nav ul{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        
+    }
+    nav ul li{
+        color: rgb(127, 127, 144);
+        font-size: 17px;
+        font-weight: 600;
+        z-index: 2;
+        transition: color 1s ease-in-out;
+    }
+    nav ul li:hover{
+        color: #000;
+    }
+    nav ul li.fa-x{
+        margin: 10px 15px 0 0 ;
+        align-self: flex-end;
+    }
+    nav .container i.fa-moon{
+        display: none;
+    }
+
+
+
+/* --------------------------- */
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    nav{
+        /* position: fixed; */
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        display: block;
+        /* border-bottom: 1px solid; */
+        /* box-shadow: 0px 0px 10px 0px #eeeeee8c inset; */
+    }
+    nav .container{
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+    }
+    nav ul{
+        position: static;
+        width: 30%;
+        flex-direction: row;
+        column-gap: 30px;
+    }
+    nav ul li{
+        color :rgb(124, 124, 140);
+        transition:color 1s ease-in-out, text-decoration 1s ease-in-out;
+    }
+    nav ul li:hover{
+        color :black;
+        text-decoration: underline;
+        text-decoration-color: red;
+    }
+    nav .container i.fa-moon{
+        display: inline;
+    }
+    nav ul li.fa-x{
+        display: none;
+    }
+    .nav-cover{
+        position: static;
+    }
+}

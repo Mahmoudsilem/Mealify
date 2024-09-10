@@ -1,0 +1,67 @@
+/* sec3 gallery start */
+.gallery{
+    padding: 48px 0;
+    margin: 48px 0;
+    background-color: #EEEEEE;
+    text-align: center;
+}
+.gallery .gallery-titel{
+    padding: 48px 0;
+}
+.gallery .gallery-titel h2{
+    color: 
+    rgb(127, 127, 144);
+    font-size: 14px;
+}
+.gallery .gallery-titel h3{
+    color: rgb(33, 37, 41);
+    font-size: 50px;
+}
+.gallery .gallery-titel h3 span{
+        color: rgb(206, 18, 18);
+}
+.gallery .imges{
+    display: flex;
+    gap: 15px;
+}
+.gallery .imges .img-col{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.gallery .imges .img-col picture{
+    position: relative;
+    overflow: hidden;
+}
+.gallery .imges .img-col picture img{
+    display: block;
+    width: 100%;
+}
+.gallery .imges .img-col picture .img-cover{
+    background-color: rgba(0, 0, 0, 0.711);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition:transform 0.5s;
+    transform: translateY(120%);
+}
+.gallery .imges .img-col picture .img-cover h3{
+    font-size: 24px;
+    font-weight: 700;
+}
+.gallery .imges .img-col picture:hover .img-cover{
+    transform: translateY(0);
+}
+.gallery .imges .img-col picture:hover img{
+    transition:transform 0.5s;
+}
+.gallery .imges .img-col picture:hover img{
+    transform: scale(1.1);
+}

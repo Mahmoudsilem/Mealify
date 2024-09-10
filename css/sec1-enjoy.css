@@ -1,0 +1,118 @@
+/* sec1 Enjoy start */
+body{
+    height: 200vh;
+}
+@keyframes shake {
+    /* The keyframe definitions you provided would go here */
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+.enjoy{
+    padding: 100px 0 48px 0;
+    margin: 0px 0 48px 0;
+    background-color: #EEEEEE;
+}
+.enjoy .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+.enjoy .enjoy-caption{
+    order:3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.enjoy .enjoy-caption h2{
+    color: rgb(55, 55, 63);
+    font-size: 65px;
+}
+.enjoy .enjoy-caption p{
+    color: rgb(79, 79, 90);
+}
+.enjoy .enjoy-caption .btns{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    order: 1;
+}
+.enjoy .enjoy-caption .btns button{
+    color: white;
+    width: 140px;
+    height: 35px;
+    border-color: #eeeeee00;
+    padding: 10px 25px;
+    background-color: red;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.enjoy .enjoy-caption .video-btn{
+    display: flex;
+    width: 165px;
+    align-items: center;
+   margin: 10px 0 10px 10px;
+}
+
+.enjoy .enjoy-caption .video-btn .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: red 5px solid;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.enjoy .enjoy-img div{
+    width: 452px;
+}
+.enjoy .enjoy-img div img{
+    width: 100%;
+}
+.enjoy .enjoy-img div img:hover{
+    animation: shake 1s infinite;
+}
+@media only screen and (min-width: 768px) {
+    .enjoy .container{
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+       justify-content: space-around;
+    }
+}
+
